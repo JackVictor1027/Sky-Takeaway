@@ -1,5 +1,8 @@
 server:
   port: 8080
+# Swagger配置
+swagger:
+  enabled: true # 启用Swagger
 
 spring:
   profiles:
