@@ -95,4 +95,15 @@ public class EmployeeController {
         PageResult pageResult = employeeService.pageQuery(employeePageQueryDTO);
         return Result.success(pageResult);
     }
+    /**
+    * @param status, id
+    * @return com.sky.result.Result
+    */
+    @PostMapping("/status/{status}")
+    @ApiOperation("启用禁用员工账号")
+    public Result startOrstop(@PathVariable Integer status,long id){
+        log.info("启用禁用员工账号:{},{}",status,id);
+        employeeService.startOrstop(status,id);
+        return Result.success();
+    }
 }

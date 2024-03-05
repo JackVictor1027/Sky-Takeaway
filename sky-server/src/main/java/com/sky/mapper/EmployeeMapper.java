@@ -33,4 +33,11 @@ public interface EmployeeMapper {
     * @return com.github.pagehelper.Page<com.sky.entity.Employee>
     */
     Page<Employee> pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+
+    /**
+     * 根据主键动态修改属性
+    * @param employee
+    * @return void
+    */
+    void update(Employee employee);
 }

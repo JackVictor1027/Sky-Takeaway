@@ -105,4 +105,21 @@ public class EmployeeServiceImpl implements EmployeeService {
         return new PageResult(total,records);
     }
 
+    @Override
+    /**
+    * @param [status, id]
+    * @return void
+    */
+    public void startOrstop(Integer status, long id) {
+        //更通用的sql语句
+        //比较传统的写法
+//        Employee employee = new Employee();
+//        employee.setStatus(status);
+//        employee.setId(id);
+        Employee employee= Employee.builder()
+                                    .status(status)
+                                    .id(id)
+                                    .build();
+        employeeMapper.update(employee);
+    }
 }
