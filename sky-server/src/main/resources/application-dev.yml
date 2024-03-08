@@ -8,6 +8,6 @@ sky:
     password: 123456
   alioss:
     endpoint: oss-cn-beijing.aliyuncs.com
-    access-key-id: LTAI5tSTZDKz1ecavLxF5Ced
-    access-key-secret: A9qWP9Sn6hy7XRJcJzPzZN2ZUiOAaO
+    access-key-id: 123456
+    access-key-secret: 123456
     bucket-name: sky-takeout-jackvictor
