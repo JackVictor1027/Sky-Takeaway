@@ -11,3 +11,8 @@ sky:
     access-key-id: 123
     access-key-secret: 123
     bucket-name: sky-takeout-jackvictor
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 10 #默认使用DB0
